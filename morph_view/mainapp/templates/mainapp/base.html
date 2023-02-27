@@ -1,5 +1,4 @@
 {% load static %}
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -76,7 +75,7 @@
                 <div class="info-title">Пациентам</div>
                 <div class="info-content">Это блок для пациентов, здесь информация для пациентов, а также ссылка на часть сайта,
                     предназначенную для пациентов</div>
-                    <div class="bottom-link"><a href="">Перейти...</a></div>
+                    <div class="bottom-link"><a href="{% url 'patient-main-page' %}">Перейти...</a></div>
             </div>
             <div class="right-side"></div>
         </div>
