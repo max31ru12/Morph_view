@@ -1,0 +1,172 @@
+@media(max-width: 1500px) {
+    .menu-burger__header {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+        list-style: none;
+    }
+}
+/* Для меню бургера */
+@media(max-width: 830px){
+
+	.menu {
+        display: block;
+        position: absolute;
+        height: 100vh;
+        left: 0;
+        background: rgb(245, 246, 246);
+        box-shadow: #ccc;
+        width: 50%;
+        box-shadow: 0 5px 6px rgba(36, 36, 36);
+        left: -100%;
+        transition: all 0.4s ease;
+        z-index: 10;
+	}
+
+    .menu.open-menu {
+        left: 0;
+    }
+
+    .menu-list {
+        display: block;
+        list-style: none;
+    }
+    .menu-list li {
+        margin: 40px 0px 40px 33px;
+        font-size: 14px;
+    }
+
+    .menu-burger__header {
+        position: relative; /* задаем относительное позиционирование */
+        width: 40px; /* определяем размеры блока */
+        height: auto;
+        display: block;
+        margin: 20px 20px 0 0;
+    }
+
+    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+    }
+
+    /* Создаю два пседвоэлемента, затем располагаю их равносмерно */
+    .menu-burger__header span{
+        top: 14px;
+    }
+    .menu-burger__header:after, .menu-burger__header:before{
+    content: '';
+    }
+    .menu-burger__header:after{
+        top: 2px;
+    }
+    .menu-burger__header:before{
+        top: 26px;
+    }
+
+    /* Это вращение палочек бургера -> крестик
+    .menu-burger__header.open-menu span {
+        opacity:0; 
+            transition: 0.5s; 
+    }
+    .menu-burger__header.open-menu:before {
+        transform: rotate(48deg);
+        top: 3px;
+        transition: 0.4s;
+    }
+    .menu-burger__header.open-menu:after {
+        transform: rotate(-48deg);
+        bottom: 14px;
+        transition: 0.4s;
+    } */
+
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+
+    .menu {
+        display: block;
+        position: absolute;
+        height: 100vh;
+        left: 0;
+        background: rgb(245, 246, 246);
+        box-shadow: #ccc;
+        width: 80%;
+        box-shadow: 0 5px 6px rgba(36, 36, 36);
+        left: -100%;
+        transition: all 0.4s ease;
+        z-index: 10;
+	}
+
+    .menu.open-menu {
+        left: 0;
+    }
+
+    .menu-list {
+        display: block;
+        list-style: none;
+    }
+    .menu-list li {
+        margin: 40px 0px 40px 33px;
+        font-size: 14px;
+    }
+
+    .menu-burger__header {
+        position: relative; /* задаем относительное позиционирование */
+        width: 20px; /* определяем размеры блока */
+        height: 20px;
+        display: block;
+        margin: 10px 20px 0 0;
+    }
+
+    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+        height: 3px;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+    }
+
+    /* Создаю два пседвоэлемента, затем располагаю их равносмерно */
+    .menu-burger__header span{
+    top: 12px;
+    }
+    .menu-burger__header:after, .menu-burger__header:before{
+        content: '';
+    }
+    .menu-burger__header:after{
+        top: 4px;
+    }
+    .menu-burger__header:before{
+     top: 20px;
+    }
+
+    /* Это вращение палочек бургера -> крестик
+    .menu-burger__header.open-menu span {
+        opacity:0; 
+            transition: 0.5s; 
+    }
+        .menu-burger__header.open-menu:before {
+        transform: rotate(48deg);
+        top: 5px;
+        transition: 0.4s;
+    }
+    .menu-burger__header.open-menu:after {
+        transform: rotate(-48deg);
+        bottom: 10px;
+        transition: 0.4s;
+    } */
+
+}
+
+
+
+

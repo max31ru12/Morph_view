@@ -4,9 +4,23 @@
 }
 
 .side-bar {
-
     border: 1px solid black;
+
 }
+
+.sm > ul > li {
+    list-style: none;
+    font-size: 2em;
+    border-bottom: 1px solid rgba(103,107,109,0.15);;
+}
+
+.sm > ul > li:last-of-type {
+    border: none;
+}
+
+
+
+
 
 @media (max-width: 1500px) {
     .main-info {
@@ -18,14 +32,18 @@
     }
 
     .side-bar {
-        flex-grow: 0.8;
+        flex-grow: 0;
         height: 100%;
         position: relative;
-        right: 0;
+        padding: 0 20px 0 20px;
+    }
+
+    .side-menu > ul > li {
+        margin: 20px 0 0 0;
     }
 
     .info {
-        flex-grow: 2.5;
+        flex-grow: 11;
         height: 40vh;
     }
 }
