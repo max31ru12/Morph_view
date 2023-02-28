@@ -1,12 +1,15 @@
 {% load static %}
-
 <html>
 <head>
 	<title>Пациентам</title>
 	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="{% static 'patient/js/burger.js' %}"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{% static 'patient/css/patient.css' %}">
-	<link rel="stylesheet" href="{% static 'patient/css/info.css' %}">
+	<link rel="stylesheet" href="{% static 'patient/css/INFO.css' %}">
+	<link rel="stylesheet" href="{% static 'patient/css/PATIENT.css' %}">
+	<link rel="stylesheet" href="{% static 'patient/css/MENU_BURGER.css' %}">
+
 	<style>
 		* {
 			margin: 0;
@@ -22,7 +25,13 @@
 			<div>логотип</div>
 			<div><a href="index.html">На главную</a></div>
 			<div>+79997778906<br>+79884446662</div>
+			<div class="menu-burger__header">
+				<span></span>
+			</div>
 		</div>
+
+
+
 		<nav class="menu">
 			<ul class="menu-list">
 				<li class="menu-button">Диагнозы</li>
@@ -34,19 +43,44 @@
 
 	<main>
 		<div class="banner">
-			<img class="banner-image" src="siluet-Moskvy.png" alt="">
+			<img class="banner-image" src="{% static 'patient/photo/siluet-Moskvy.png' %}" alt="">
 		</div>
 		<div class="main-info">
-			<aside class="side-bar left"></aside>
+			<aside class="side-bar left">
+				<nav class="sm side-menu">
+					<ul>
+						<li class="first">Индивидуальные<br>встречи</li>
+						<li>Ваш диагноз</li>
+						<li>Оставить отзыв</li>
+						<li>Куда обратиться</li>
+						<li>Оборудование</li>
+						<li>Сотрудничество</li>
+						<li>Партнеры</li>
+					</ul>
+				</nav>
+			</aside>
 			<div class="info">
-
+				<div class="info-title"></div>
 			</div>
-			<aside class="side-bar bottom"></aside>
+			<aside class="side-bar bottom">
+				<nav class="sm bottom-menu">
+					<ul>
+						<li>Индивидуальные<br>встречи</li>
+						<li>Ваш диагноз</li>
+						<li>Оставить отзыв</li>
+						<li>Куда обратиться</li>
+						<li>Оборудование</li>
+						<li>Сотрудничество</li>
+						<li>Партнеры</li>
+					</ul>
+				</nav>
+			</aside>
 
 
 		</div>
 	</main>
 
 	</div>
+
 </body>
 </html>

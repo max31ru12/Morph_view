@@ -28,29 +28,20 @@ body {
 		background-color: #fff;
 	}
 
-	.menu {
-		display: flex;
-	}
-
 	header {
 		height: 180px;
 	}
 
 }
 
-
-
 @media (max-width: 830px) {
 	.container {
 		width: 100%;
 	}
 
-	.menu {
-		display: flex;
-	}
-
 	header {
-		height: 180px;
+		height: 130px;
+
 	}
 }
 
@@ -59,17 +50,12 @@ body {
 		width: 100%;
 	}
 
-	.menu {
-		display: none;
-	}
-
 	header {
-		height: 100px;
+		height: 130px;
 	}
 }
 
 header {
-
 	display: flex;
 	flex-direction: column;
 }
@@ -86,17 +72,12 @@ header {
 }
 
 .menu {
-	border: 1px solid black;
 	flex-grow: 0;
 	background-color: rgb(50, 98, 122);
 	height: 50px;
 }
 
-.menu-list {
-	list-style: none;
-	display: flex;
 
-}
 
 .banner > img {
 	width: 100%;
