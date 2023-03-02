@@ -1,6 +1,6 @@
 
 /* Для компов */
-@media (max-width:1500px){
+@media (max-width:2000px){
     .menu-list {
         display: flex;
     }
