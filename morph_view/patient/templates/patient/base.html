@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="{% static 'patient/css/INFO.css' %}">
 	<link rel="stylesheet" href="{% static 'patient/css/PATIENT.css' %}">
 	<link rel="stylesheet" href="{% static 'patient/css/MENU_BURGER.css' %}">
+	<link rel="stylesheet" href="{% static 'patient/css/SLIDER.css' %}">
 
 	<style>
 		* {
@@ -42,9 +43,8 @@
 	</header>
 
 	<main>
-		<div class="banner">
-			<img class="banner-image" src="{% static 'patient/photo/siluet-Moskvy.png' %}" alt="">
-		</div>
+		{% block banner %}
+		{% endblock %}
 		<div class="main-info">
 			<aside class="side-bar left">
 				<nav class="sm side-menu">

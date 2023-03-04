@@ -21,7 +21,7 @@ body {
 
 
 /* Медиазапрос для контейнера */
-@media (max-width: 1500px) {
+@media (max-width: 2000px) {
 	.container {
 		width: 1200px;
 		box-shadow: 0 0 6px 1px rgb(179, 179, 181);
@@ -76,6 +76,8 @@ header {
 	background-color: rgb(50, 98, 122);
 	height: 50px;
 }
+
+
 
 .banner > img {
 	width: 100%;
