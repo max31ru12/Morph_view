@@ -1,0 +1,50 @@
+@media (max-width:2000px){
+    .banner {
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    .banner-image {
+        position: absolute;
+        animation: round 12s infinite;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    @keyframes round {
+        25%{opacity:1}
+        40%{opacity:0}
+        }
+
+        img:nth-child(1){animation-delay:8s}
+        img:nth-child(2){animation-delay:4s}
+        img:nth-child(3){animation-delay:0s}
+
+}
+
+@media (max-width:500px){
+    .banner {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .banner-image {
+        position: absolute;
+        animation: round 12s infinite;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    @keyframes round {
+        25%{opacity:1}
+        40%{opacity:0}
+        }
+
+        img:nth-child(1){animation-delay:8s}
+        img:nth-child(2){animation-delay:4s}
+        img:nth-child(3){animation-delay:0s}
+
+}
+

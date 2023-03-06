@@ -1,0 +1,73 @@
+.main-info {
+    height: 100vh;
+
+}
+
+.side-bar {
+    border: 1px solid black;
+
+}
+
+.sm > ul > li {
+    list-style: none;
+    font-size: 2em;
+    border-bottom: 1px solid rgba(103,107,109,0.15);;
+}
+
+.sm > ul > li:last-of-type {
+    border: none;
+}
+
+
+
+
+
+@media (max-width: 1500px) {
+    .main-info {
+        display: flex;
+    }
+    /* Убираю нижнее меню для компа */
+    .bottom {
+        display: none;
+    }
+
+    .side-bar {
+        flex-grow: 0;
+        height: 100%;
+        position: relative;
+        padding: 0 20px 0 20px;
+    }
+
+    .side-menu > ul > li {
+        margin: 20px 0 0 0;
+    }
+
+    .info {
+        flex-grow: 11;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 830px) {
+    .main-info {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Включаю нижнее меню и выключаю левое */
+    .bottom {display: flex;}
+
+    .left {display: none;}
+
+}
+
+@media (max-width: 500px) {
+    .main-info {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Включаю нижнее меню и выключаю левое */
+    .bottom {display: flex;}
+
+    .left {display: none;}
+
+}

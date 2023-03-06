@@ -6,10 +6,10 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="{% static 'patient/js/burger.js' %}"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{% static 'patient/css/INFO.css' %}">
-	<link rel="stylesheet" href="{% static 'patient/css/PATIENT.css' %}">
-	<link rel="stylesheet" href="{% static 'patient/css/MENU_BURGER.css' %}">
-	<link rel="stylesheet" href="{% static 'patient/css/SLIDER.css' %}">
+	<link rel="stylesheet" href="{% static 'patient/INFO.css' %}">
+	<link rel="stylesheet" href="{% static 'patient/PATIENT.css' %}">
+	<link rel="stylesheet" href="{% static 'patient/MENU_BURGER.css' %}">
+	<link rel="stylesheet" href="{% static 'patient/SLIDER.css' %}">
 
 	<style>
 		* {
@@ -60,7 +60,10 @@
 				</nav>
 			</aside>
 			<div class="info">
-				<div class="info-title"></div>
+				<div class="info-title">PATIENT TITLE</div>
+				<video width="200px" height="200px" autoplay controls>
+					<source src="{% static 'sample-10s.mp4' %}" autoplay type="video/mp4">
+				</video>
 			</div>
 			<aside class="side-bar bottom">
 				<nav class="sm bottom-menu">
