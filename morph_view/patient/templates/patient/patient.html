@@ -9,3 +9,9 @@
         <img class="banner-image" src="{% static 'patient/green.jpg' %}" alt="">
     </div>
 {% endblock %}
+
+{% block video %}
+<video width="200px" height="200px" autoplay controls>
+    <source src="{{ video }}" autoplay type="video/mp4">
+</video>
+{% endblock %}
