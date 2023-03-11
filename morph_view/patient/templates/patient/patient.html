@@ -11,7 +11,12 @@
 {% endblock %}
 
 {% block video %}
-<video width="200px" height="200px" autoplay controls>
-    <source src="{{ video }}" autoplay type="video/mp4">
-</video>
+    {% for vid in video %}
+<!-- Если видео добавлено -->
+    {% if vid.is_published is True %}
+    <video width="200px" height="200px" autoplay controls>
+        <source src="{{ vid.video_path.url }}" type="video/mp4">
+    </video>
+    {% endif %}
+    {% endfor %}
 {% endblock %}

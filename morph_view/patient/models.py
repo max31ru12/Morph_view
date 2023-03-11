@@ -9,13 +9,15 @@ from django.db import models
 
 # Create your models here.
 class MainPageVideo(models.Model):
-    title = models.CharField(max_length=128)
-    description = models.TextField()
+    title = models.CharField(max_length=128, verbose_name='Название видео')
+    description = models.TextField(verbose_name='Описание видео')
     video_path = models.FileField(
-        upload_to='patient/video',
-        validators=[FileExtensionValidator(allowed_extensions=['mp4'])]
+        upload_to='patient/video/',
+        validators=[FileExtensionValidator(allowed_extensions=['mp4'])],
+        verbose_name='Путь'
     )
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Время добавления')
+    is_published = models.BooleanField(default=False, verbose_name='Добавлено на страницу')
 
     def __str__(self):
         return self.title
