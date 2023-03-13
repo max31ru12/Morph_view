@@ -86,22 +86,17 @@
 
 }
 
-
-
-
-
-
 @media (max-width: 500px) {
 
     .menu {
         display: block;
         position: absolute;
-        height: 100vh;
+        height: 100%;
         left: 0;
         background: rgb(245, 246, 246);
         box-shadow: #ccc;
         width: 80%;
-        box-shadow: 0 5px 6px rgba(36, 36, 36);
+        box-shadow: 0 0 6px rgba(36, 36, 36);
         left: -100%;
         transition: all 0.4s ease;
         z-index: 10;
@@ -110,10 +105,21 @@
     .menu.open-menu {
         left: 0;
     }
+/*
+    .menu-list > :nth-child(1) {
+        position: sticky;
+        top: 0;
+    }
+    .menu-list > :nth-child(2) {
+        position: sticky;
+        top: 40px;
+    } */
+
 
     .menu-list {
         display: block;
         list-style: none;
+        height: 100%;
     }
     .menu-list li {
         margin: 40px 0px 40px 33px;

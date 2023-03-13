@@ -1,12 +1,8 @@
 .main-info {
     height: 100vh;
-
+    box-sizing: border-box;
 }
 
-.side-bar {
-    border: 1px solid black;
-
-}
 
 .sm > ul > li {
     list-style: none;
@@ -18,13 +14,25 @@
     border: none;
 }
 
+.banner {
+    margin-bottom: 10px;
+}
+
+.left {
+    position: sticky;
+    top: 0;
+}
+
+.sm {
+    position: sticky;
+    top: 0;
+}
 
 
-
-
-@media (max-width: 1500px) {
+@media (max-width: 2000px) {
     .main-info {
         display: flex;
+        height: auto;
     }
     /* Убираю нижнее меню для компа */
     .bottom {
@@ -32,9 +40,7 @@
     }
 
     .side-bar {
-        flex-grow: 0;
         height: 100%;
-        position: relative;
         padding: 0 20px 0 20px;
     }
 
@@ -44,8 +50,23 @@
 
     .info {
         flex-grow: 11;
-        height: 40vh;
+        height: auto;
     }
+
+    video, .video-title {
+        width: 90%;
+        padding-left: 5%;
+        font-size: 30px;
+    }
+
+    .info-title {
+        padding-left: 5%;
+        font-size: 1em;
+        font-family: sans-serif;
+    }
+
+
+
 }
 
 @media (max-width: 830px) {
@@ -58,6 +79,17 @@
 
     .left {display: none;}
 
+    .info-title {
+        padding-left: 5%;
+        font-size: 1em;
+        font-family: sans-serif;
+    }
+
+    video, .video-title {
+        width: 90%;
+        padding-left: 5%;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -69,5 +101,16 @@
     .bottom {display: flex;}
 
     .left {display: none;}
+
+    .info-title {
+        padding-left: 5vw;
+        font-size: 1em;
+        font-family: sans-serif;
+    }
+
+    video, .video-title {
+        width: 90vw;
+        padding-left: 5vw;
+    }
 
 }
